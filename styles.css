@@ -5,8 +5,8 @@
 body {
   /* background image */
   background-image: url("./images/kai-pilger-Ef6iL87-vOA-unsplash.jpg");
-  background-repeat: no-repeat;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: 100% 100%;
 
   /* position */
@@ -26,7 +26,7 @@ body {
 .title {
   /* position */
   text-align: center;
-  padding-top: 100px;
+  padding-top: 6%;
   margin-bottom: 0;
 
   /* text */
@@ -57,6 +57,13 @@ body {
   opacity: 0.8;
 }
 
+.city {
+  text-decoration: none;
+  cursor: pointer;
+  text-decoration: underline;
+  color: inherit;
+}
+
 .link-container {
   /* position */
   display: flex;
@@ -83,6 +90,40 @@ body {
   text-decoration: none;
   color: var(--color-primary);
   opacity: 0.8;
+}
+
+#github:hover {
+  color: #ef9a9a;
+}
+
+#devto:hover {
+  color: #a5d6a7;
+}
+
+#twitter:hover {
+  color: #81d4fa;
+}
+
+#email:hover {
+  color: #b39ddb;
+}
+
+@media (max-height: 680px), screen and (orientation: portrait) {
+  .title {
+    padding-top: 4%;
+
+    font-size: 150px;
+  }
+
+  .paragraph {
+    font-size: 40px;
+  }
+
+  .icon-link {
+    margin: 15px;
+
+    font-size: 140px;
+  }
 }
 
 /* Bob animation */
