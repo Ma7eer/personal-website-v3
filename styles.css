@@ -109,6 +109,9 @@ body {
 }
 
 @media (max-height: 680px), screen and (orientation: portrait) {
+  #particles-js {
+    display: none;
+  }
   .title {
     padding-top: 4%;
 
