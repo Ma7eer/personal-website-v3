@@ -1,6 +1,7 @@
 :root {
   --color-primary: white;
   --background-image: url("../images/kai-pilger-Ef6iL87-vOA-unsplash.jpg");
+  --opacity: 1;
 }
 
 body {
@@ -15,10 +16,14 @@ body {
 
   /* text  */
   font-family: "Cairo", sans-serif;
+  /* font-family: "Markazi", sans-serif;
+  font-family: "Aref Ruqaa", sans-serif;
+  font-family: "Katibeh", sans-serif; */
   color: var(--color-primary);
 }
 
 #particles-js {
+  /* display: inline; */
   position: fixed;
   width: 100%;
   z-index: -10;
@@ -28,11 +33,11 @@ body {
   /* position */
   text-align: center;
   padding-top: 6%;
-  margin-bottom: 0;
+  margin-bottom: 2%;
 
   /* text */
   font-size: 100px;
-  opacity: 0.8;
+  opacity: var(--opacity);
 
   /* position */
   z-index: 0;
@@ -55,7 +60,7 @@ body {
 
   /* text */
   font-size: 30px;
-  opacity: 0.8;
+  opacity: var(--opacity);
 }
 
 .city {
@@ -90,7 +95,7 @@ body {
   /* text */
   text-decoration: none;
   color: var(--color-primary);
-  opacity: 0.8;
+  opacity: var(--opacity);
 }
 
 #github:hover {
@@ -107,6 +112,13 @@ body {
 
 #email:hover {
   color: #b39ddb;
+}
+
+.lang-select {
+  width: 150px;
+  padding: 10px;
+  font-size: 20px;
+  margin: 15px;
 }
 
 @media (max-height: 680px), screen and (orientation: portrait) {
@@ -127,6 +139,16 @@ body {
     margin: 15px;
 
     font-size: 140px;
+  }
+
+  .lang-select {
+    width: 200px;
+    padding: 15px;
+    font-size: 30px;
+    margin: 15px;
+  }
+  .lang-select > option {
+    font-size: 30px;
   }
 }
 

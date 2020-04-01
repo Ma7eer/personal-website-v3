@@ -8,10 +8,28 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap"
       rel="stylesheet"
     />
+
+    <!-- font Amiri from google fonts -->
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap"
+      rel="stylesheet"
+    /> -->
     <link rel="stylesheet" type="text/css" href="./src/css/styles.css" />
   </head>
   <body dir="auto">
     <div id="particles-js"></div>
+    <select class="lang-select" name="language">
+      <option value="en">English</option>
+      <option value="ar">Arabic</option>
+    </select>
     <h1 class="title bob-on-hover">MAHER ALKENDI</h1>
 
     <div class="paragraph-container bob-on-hover">
@@ -23,24 +41,50 @@
 
     <div class="link-container bob-on-hover">
       <div class="icon-link" title="Portfolio: Github">
-        <a href="https://github.com/Ma7eer" class="link" id="github"
-          ><i class="fab fa-github-square"></i
-        ></a>
+        <a
+          href="https://github.com/Ma7eer"
+          class="link"
+          id="github"
+          style="font-size: 30px; text-decoration: underline;"
+        >
+          <!-- <i class="fab fa-github-square hidden"></i> -->
+          <i class="fab fa-github"></i>
+          <span id="github-text">Portfolio</span>
+        </a>
       </div>
       <div class="icon-link" title="Blog: Dev.to">
-        <a href="https://dev.to/ma7eer" class="link" id="devto"
-          ><i class="fab fa-dev"></i
-        ></a>
+        <a
+          href="https://dev.to/ma7eer"
+          class="link"
+          id="devto"
+          style="font-size: 30px; text-decoration: underline;"
+        >
+          <i class="fab fa-dev"></i>
+          <span id="devto-text">Blog</span>
+        </a>
       </div>
       <div class="icon-link" title="Social Media: Twitter">
-        <a href="https://twitter.com/maheralkendi" class="link" id="twitter"
-          ><i class="fab fa-twitter-square"></i
-        ></a>
+        <a
+          href="https://twitter.com/maheralkendi"
+          class="link"
+          id="twitter"
+          style="font-size: 30px; text-decoration: underline;"
+        >
+          <!-- <i class="fab fa-twitter-square hidden"></i> -->
+          <i class="fab fa-twitter"></i>
+          <span id="twitter-text">Twitter</span>
+        </a>
       </div>
       <div class="icon-link" title="Email: Gmail">
-        <a href="mailto:maher.alkendi2@gmail.com" class="link" id="email"
-          ><i class="fas fa-envelope-square"></i
-        ></a>
+        <a
+          href="mailto:maher.alkendi2@gmail.com"
+          class="link"
+          id="email"
+          style="font-size: 30px; text-decoration: underline;"
+        >
+          <!-- <i class="fas fa-envelope-square hidden"></i> -->
+          <i class="far fa-envelope"></i> <span id="email-text">Email</span>
+        </a>
       </div>
     </div>
 
@@ -52,6 +96,7 @@
     ></script>
     <!-- my scripts -->
     <script src="./src/js/particlejs.config.js" async></script>
+    <script src="./src/js/translate.js" async></script>
     <script src="./src/js/main.js" async></script>
   </body>
 </html>
