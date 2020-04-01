@@ -1,0 +1,27 @@
+{
+  "name": "personal-website-v3",
+  "version": "1.0.0",
+  "description": "This third iteration of my personal website. Although it is the 3rd iteration, it is the first to be published. I decided to publish this site in its simplest form because I made the mistake before of trying to make my site \"perfect\".",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ma7eer/personal-website-v3.git"
+  },
+  "author": "Maher Alkendi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ma7eer/personal-website-v3/issues"
+  },
+  "homepage": "https://github.com/Ma7eer/personal-website-v3#readme",
+  "dependencies": {
+    "node-polyglot": "^2.4.0",
+    "particles.js": "^2.0.0"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
+}

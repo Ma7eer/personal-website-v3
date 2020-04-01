@@ -1,10 +1,11 @@
 :root {
   --color-primary: white;
+  --background-image: url("../images/kai-pilger-Ef6iL87-vOA-unsplash.jpg");
 }
 
 body {
   /* background image */
-  background-image: url("./images/kai-pilger-Ef6iL87-vOA-unsplash.jpg");
+  background-image: var(--background-image);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100% 100%;
