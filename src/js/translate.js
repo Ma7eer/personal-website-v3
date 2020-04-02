@@ -37,7 +37,6 @@ languageSelect.addEventListener("change", e => {
   switch (e.target.value) {
     case "ar":
       bodyTag.dir = "rtl";
-      // bodyTag.style.fontFamily = "Aref Ruqaa";
       title.innerHTML = polyglot.t("ar.NAME");
       paragraph.innerHTML = polyglot.t("ar.paragraph");
       github.innerHTML = polyglot.t("ar.github");
@@ -55,6 +54,13 @@ languageSelect.addEventListener("change", e => {
       email.innerHTML = polyglot.t("en.email");
       break;
     default:
+      bodyTag.dir = "ltr";
+      title.innerHTML = polyglot.t("en.NAME");
+      paragraph.innerHTML = polyglot.t("en.paragraph");
+      github.innerHTML = polyglot.t("en.github");
+      devto.innerHTML = polyglot.t("en.devto");
+      twitter.innerHTML = polyglot.t("en.twitter");
+      email.innerHTML = polyglot.t("en.email");
       return;
   }
 });

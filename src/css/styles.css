@@ -1,12 +1,12 @@
 :root {
   --color-primary: white;
-  --background-image: url("../images/kai-pilger-Ef6iL87-vOA-unsplash.jpg");
+  /* --background-image: url("../images/kai-pilger-Ef6iL87-vOA-unsplash.jpg"); */
   --opacity: 1;
 }
 
 body {
   /* background image */
-  background-image: var(--background-image);
+  background-image: url("../images/kai-pilger-Ef6iL87-vOA-unsplash.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -16,16 +16,13 @@ body {
 
   /* text  */
   font-family: "Cairo", sans-serif;
-  /* font-family: "Markazi", sans-serif;
-  font-family: "Aref Ruqaa", sans-serif;
-  font-family: "Katibeh", sans-serif; */
   color: var(--color-primary);
 }
 
 #particles-js {
   /* display: inline; */
   position: fixed;
-  width: 90%;
+  width: 100%;
   z-index: -10;
 }
 
