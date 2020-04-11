@@ -15,16 +15,10 @@ body {
   z-index: -1;
 
   /* text  */
-  /* font-family: "Cairo", sans-serif; */
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
+  /* font-family: sans-serif; */
+  font-weight: 300;
   color: var(--color-primary);
-}
-
-#particles-js {
-  /* display: inline; */
-  position: fixed;
-  width: 100%;
-  z-index: -10;
 }
 
 .title {
@@ -120,9 +114,6 @@ body {
 }
 
 @media (max-height: 680px), screen and (orientation: portrait) {
-  #particles-js {
-    display: none;
-  }
   .title {
     padding-top: 4%;
 
@@ -216,4 +207,123 @@ body {
   animation-fill-mode: forwards;
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
+}
+
+.rocket {
+  font-size: 60px;
+  position: absolute;
+  top: 70%;
+  bottom: 20px;
+  visibility: hidden;
+}
+
+.launch {
+  animation: launch 20s ease-in 20s infinite;
+}
+
+@keyframes launch {
+  0% {
+    visibility: hidden;
+  }
+  20% {
+    visibility: visible;
+    transform: translateX(1200px) translateY(-1200px);
+  }
+  40% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
+/* @keyframes launch-rtl {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+    transform: translateX(-1200px) translateY(1200px);
+  }
+} */
+
+.astronaut {
+  width: 60px;
+  position: absolute;
+  top: 80%;
+}
+
+@keyframes float {
+  0% {
+    visibility: visible;
+    transform: translateX(0vw) rotate(0);
+    /* transform: translateX(0px) rotate(0); */
+  }
+  100% {
+    transform: translateX(90vw) rotate(360deg);
+    /* transform: translateX(2000px) rotate(360deg); */
+    visibility: hidden;
+    /* overflow: hidden; */
+  }
+}
+
+@keyframes say-hi {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  40% {
+    visibility: visible;
+    opacity: 0;
+  }
+  60% {
+    visibility: visible;
+    opacity: 1;
+  }
+  90% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.speech-bubble {
+  position: absolute;
+  background: white;
+  border-radius: 0.4em;
+  padding: 10px;
+  bottom: 20px;
+  left: 35px;
+  color: black;
+  font-size: 30px;
+
+  visibility: hidden;
+  animation: say-hi 15s linear 1;
+}
+
+.speech-bubble:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: white;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -10px;
+  margin-bottom: -20px;
+}
+
+.float {
+  position: absolute;
+  top: 80%;
+
+  animation: float 15s linear 1;
+  visibility: hidden;
 }
