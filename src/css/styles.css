@@ -6,7 +6,8 @@
 
 body {
   /* background image */
-  background-image: url("../images/kai-pilger-Ef6iL87-vOA-unsplash.jpg");
+  /* background-image: url("../images/kai-pilger-Ef6iL87-vOA-unsplash.jpg"); */
+  background-image: url("../images/Webp.net-resizeimage.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -326,4 +327,87 @@ body {
 
   animation: float 15s linear 1;
   visibility: hidden;
+}
+
+.star {
+  position: absolute;
+  /* color: white; */
+  background-color: white;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  z-index: 3;
+
+  animation: glowing-stars 2s linear infinite;
+}
+
+.star-1 {
+  right: 200px;
+  top: 100px;
+}
+
+.star-2 {
+  right: 400px;
+  top: 100px;
+}
+
+.star-3 {
+  right: 800px;
+  top: 100px;
+}
+
+.star-4 {
+  right: 800px;
+  top: 400px;
+}
+
+.star-5 {
+  right: 800px;
+  top: 800px;
+}
+
+.star-6 {
+  right: 200px;
+  top: 835px;
+}
+
+.star-7 {
+  right: 1200px;
+  top: 800px;
+}
+.star-8 {
+  right: 1190px;
+  top: 676px;
+}
+
+.star-9 {
+  right: 1100px;
+  top: 760px;
+}
+
+.star-10 {
+  right: 600px;
+  top: 800px;
+}
+
+.star-11 {
+  right: 600px;
+  top: 500px;
+}
+
+.star-12 {
+  right: 300px;
+  top: 500px;
+}
+
+@keyframes glowing-stars {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

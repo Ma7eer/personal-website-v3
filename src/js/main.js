@@ -1,3 +1,11 @@
+// document.addEventListener("DOMContentLoaded", function (event) {
+//   // - Code to execute when all DOM content is loaded.
+//   // - including fonts, images, etc.
+//   const body = document.querySelector("body");
+
+//   body.style.backgroundImage = "url('kai-pilger-Ef6iL87-vOA-unsplash.jpg')";
+// });
+
 // const squareIcon = document.querySelector(".fa-envelope-square");
 // const icon = document.querySelector(".fa-envelope");
 // const emailText = document.querySelector("#email-text");
