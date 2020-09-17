@@ -362,18 +362,18 @@ body {
 }
 
 .star-5 {
-  right: 800px;
-  top: 800px;
+  right: 761px;
+  top: 512px;
 }
 
 .star-6 {
   right: 200px;
-  top: 835px;
+  top: 335px;
 }
 
 .star-7 {
   right: 1200px;
-  top: 800px;
+  top: 233px;
 }
 .star-8 {
   right: 1190px;
@@ -382,12 +382,12 @@ body {
 
 .star-9 {
   right: 1100px;
-  top: 760px;
+  top: 160px;
 }
 
 .star-10 {
   right: 600px;
-  top: 800px;
+  top: 324px;
 }
 
 .star-11 {
@@ -398,6 +398,11 @@ body {
 .star-12 {
   right: 300px;
   top: 500px;
+}
+
+.star-13 {
+  right: 1260px;
+  top: 550px;
 }
 
 @keyframes glowing-stars {
