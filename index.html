@@ -10,10 +10,18 @@
 
     <title>Maher Alkendi</title>
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- we defer the loading of font as it was delaying critical rendering -->
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+    /></noscript>
 
     <link rel="stylesheet" type="text/css" href="./src/css/styles.css" />
   </head>
@@ -42,11 +50,15 @@
     <div class="star star-11"></div>
     <div class="star star-12"></div>
     <div class="star star-13"></div>
-    <label for="lang-select"></label>
-    <select class="lang-select" name="language" id="lang-select">
-      <option value="en">English</option>
-      <option value="ar">Arabic</option>
-    </select>
+    <form>
+      <label>
+        <select class="lang-select" name="language">
+          <option value="en">English</option>
+          <option value="ar">Arabic</option>
+        </select>
+      </label>
+    </form>
+
     <h1 class="title bob-on-hover">MAHER ALKENDI</h1>
 
     <div class="paragraph-container bob-on-hover">
@@ -113,6 +125,6 @@
     ></script>
     <!-- my scripts -->
     <!-- <script src="./src/js/main.js"></script> -->
-    <script src="./src/js/translate.js" async></script>
+    <script src="./src/js/translate.js" defer></script>
   </body>
 </html>
