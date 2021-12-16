@@ -1,12 +1,10 @@
 :root {
   --color-primary: white;
-  /* --background-image: url("../images/kai-pilger-Ef6iL87-vOA-unsplash.jpg"); */
   --opacity: 1;
 }
 
 body {
   /* background image */
-  /* background-image: url("../images/Webp.net-resizeimage.jpg"); */
   background-image: url("../images/optimized-background.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -239,16 +237,6 @@ body {
   }
 }
 
-/* @keyframes launch-rtl {
-  0% {
-    visibility: visible;
-  }
-  100% {
-    visibility: hidden;
-    transform: translateX(-1200px) translateY(1200px);
-  }
-} */
-
 .astronaut {
   width: 60px;
   position: absolute;
@@ -259,13 +247,10 @@ body {
   0% {
     visibility: visible;
     transform: translateX(0vw) rotate(0);
-    /* transform: translateX(0px) rotate(0); */
   }
   100% {
     transform: translateX(90vw) rotate(360deg);
-    /* transform: translateX(2000px) rotate(360deg); */
     visibility: hidden;
-    /* overflow: hidden; */
   }
 }
 
